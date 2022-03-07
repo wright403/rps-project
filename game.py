@@ -2,8 +2,11 @@ from human import Human
 from aiplayer import Aiplayer
 
 class Game:
- def __init__(self):
-     pass
+    def __init__(self):
+        pass
+
+    def game(self):
+         self.display_greeting() 
 
 
 
@@ -12,6 +15,7 @@ class Game:
 
 
 
-def display_greeting(self):
-    print('Welcome to the game')
+
+    def display_greeting(self):
+      print('Welcome to the game')
     
