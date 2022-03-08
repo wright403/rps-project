@@ -6,3 +6,4 @@ class Player:
         pass
     
     def givengesture(self):
+        pass

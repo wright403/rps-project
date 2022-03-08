@@ -1,4 +1,6 @@
+from secrets import choice
 from player import Player
+import random
 
 
 class Aiplayer(Player):
@@ -9,5 +11,8 @@ class Aiplayer(Player):
         player_2=Aiplayer("Player 2")
 
     def givengesture(self):
-        return super().givengesture()
+        super().givengesture()
+        return random(choice)
 
+    givengesture = Aiplayer("Player 2", givengesture)
+    print(givengesture.name)
