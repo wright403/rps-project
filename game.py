@@ -1,22 +1,21 @@
 
 from human import Human
 from aiplayer import Aiplayer
+# from player import Player
 
 class Game:
     def __init__(self):
-        self.human = Human()
-        self.aiplayer = Aiplayer()
-        
-        
-
+        self.player_1 = Human("Buzz")
+        self.player_2 = Aiplayer("Terminator")
+        pass
 
     def run_game(self):
         self.display_greeting()
         self.display_rules()
-        self.choose_opponent()
-        self.play_game()
-        self.display_winner()
-
+        # self.choose_opponent()
+        # self.play_game()
+        # self.display_winner()
+        pass
 
     def display_greeting(self):
         print("Welcome to RPSLS!")
@@ -29,31 +28,19 @@ class Game:
         has_chosen = False
         while has_chosen is False:
             if self.opponent_choice == 'Y':
-                print(f'you have chosen {self.player_one}')
+                self.player_2 = Aiplayer()
+                print ('You have chosen single player')
                 break
             elif self.opponent_choice == 'N':
-                print('you have chosen multiplayer')
+                self.player_1 = Human()
+                print('You have chosen multi player')
                 break
             else:
-                print('please Enter Y or N')
-                break
-
-
-                  
-    def create_player_one(self):
-        player_one = Human()
-        player_two = Human()
-
-
-    def create_player_two(self):
-        player_two = Aiplayer()      
-
-
-            
-            
-    
+                self.opponent_choice = input('Will you be playing against the computer? Y or N: ')
+                has_chosen = False
     
     def play_game(self):
+        #while both player scores are less than 3
         pass
                     
         
