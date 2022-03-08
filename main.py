@@ -1,4 +1,4 @@
 from game import Game
 game = Game()
-pass
+game.run_game()
 

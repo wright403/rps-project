@@ -2,8 +2,7 @@ class Player:
 
     def __init__(self):
         self.name = ''
-        self.gesture = ['rock', 'paper', 'scissors', 'lizard', 'spock']
-        pass
+        self.gestures = ['rock', 'paper', 'scissors', 'lizard', 'spock']
+        
     
-    def givengesture(self):
-        pass
+    
