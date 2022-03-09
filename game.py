@@ -1,4 +1,5 @@
 
+from ast import Pass
 from human import Human
 from aiplayer import Aiplayer
 # from player import Player
@@ -12,9 +13,9 @@ class Game:
     def run_game(self):
         self.display_greeting()
         self.display_rules()
-        # self.choose_opponent()
-        # self.play_game()
-        # self.display_winner()
+        self.choose_opponent()
+        self.play_game()
+        self.display_winner()
         pass
 
     def display_greeting(self):
@@ -28,11 +29,11 @@ class Game:
         has_chosen = False
         while has_chosen is False:
             if self.opponent_choice == 'Y':
-                self.player_2 = Aiplayer()
+                self.player_2 = Aiplayer('Terminator')
                 print ('You have chosen single player')
                 break
             elif self.opponent_choice == 'N':
-                self.player_1 = Human()
+                self.player_1 = Human('Buzz')
                 print('You have chosen multi player')
                 break
             else:
@@ -40,8 +41,12 @@ class Game:
                 has_chosen = False
     
     def play_game(self):
-        #while both player scores are less than 3
-        pass
+        while self.player_1 <= 2 and self.player_2 <= 2:
+            if self.player_1:
+             pass
+
+
+        
                     
         
 

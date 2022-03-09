@@ -14,7 +14,7 @@ class Aiplayer(Player):
     
     def choose_gesture(self):
         return random.choice(self.gestures)
-        pass
+        
 
 
       

@@ -6,17 +6,6 @@ class Human(Player):
         pass
   
     def choose_gesture(self):
-        user_input = input(f'please choose one of the following {self.gestures}: ')
-            if user_input == 'rock':
-                return 'rock'
-            if user_input == 'paper':
-                return 'paper'
-            if user_input == 'scissors':
-                return 'scissors'
-            if user_input == 'lizard':
-                return 'lizard'
-            if user_input == 'spock': 
-                return 'spock'   
-            pass
+         input(f'please choose between {self.gestures}')
+         return self.gestures
         
-# "copy and paste like 19 times"
